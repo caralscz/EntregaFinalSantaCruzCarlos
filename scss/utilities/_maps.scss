@@ -1,0 +1,19 @@
+$colores:(
+    color1:white,
+    color2:black,
+    color21:rgba(0, 0, 0, 0.575),
+    color3:red,
+    color4:blue,
+    color5:yellow,
+    color6:lightcoral
+);
+
+// se usa: color: map-get($colores, color6 ); // lightcoral;
+// Color2 (black) lo uso en: header h1
+//
+
+$medidasFuentes:(
+    sm:16px,
+    md:24px,
+);
+

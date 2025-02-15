@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- con link vinculamos los CSS que queremos -->
+
+    <!--Link a los fonts de google - Lo uso en el título H1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Animate.style    animacion -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- mis estilos creados -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Documentos Familiares</title>
+</head>
+
+<body>
+
+    <header class="contenedorHeader">
+
+        <h1 class="headerH1 animate__animated  animate__backInLeft">Documentos&nbsp;&nbsp;Familiares</h1>
+
+        <!-- Barra de navegacion  -init  style="background-color: #e3f2fd;" -->
+        <nav class="headerNav">
+            <div>
+                <ul>
+                    <li><a href="../index.html">
+                            <img src="../assets/img/icons_home.png" alt="Documentos familares"></a></li>
+                    <li><a href="./docFamHistorias.html">Historias</a></li>
+                    <li><a href="./docFamFotos.html">Fotos</a></li>
+                    <li><a href="./docFamDatosUtiles.html">Datos
+                            &uacute;tiles</a></li>
+                    <li><a href="./docFamContacto.html">Contacto</a></li>
+                    <li><a href="./docFamIngreso.html">
+                            <img src="../assets/img/icons_login.png" alt="Ingresar"></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Barra de navegacion -fin -->
+    </header>
+
+
+    <main>
+        <!-- card  scss *init* -->
+        <section class="contenedor cardTemaDePagina">
+
+            <div>
+                <img src="../assets/img/Bienvenido.jpeg" class="cardTemaImg" alt="Mensaje">
+            </div>
+            <div class="cardTemaParrafo">
+                <h5>Ingreso</h5>
+                <p>Debe identificarse con su nombre y apellido para ingresar al sistema</p>
+                <p><small class="text-body-secondary">Si no tiene un usuario v&aacute;lido
+                        debe solicitar uno</small></p>
+            </div>
+            <!-- card  scss *fin* -->
+        </section>
+
+        <section class="contenedor formCom0">
+            <div>
+                <h5>Identificaci&oacute;n</h5>
+            </div>
+            <div>
+                <form action="./docFamMensaje.html" method="get">
+                    <label for="nombre">Nombres y apellidos (*):</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    <label for="Password">Password (*):</label>
+                    <input type="password" id="Password" name="Password" required><br><br>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <label for="mensaje">Mensaje (*):</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+                <p class="pSecundario"><small>(*) Dato requerido</small></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="contenedor">
+
+        <div class="footerDivIcono ">
+            <img src="../assets/img/PiePag00.png" alt="Documentos familiares">
+        </div>
+
+        <div class="footerDivTexto ">
+            <p>Preentrega 03 - Santa Cruz Carlos A ©</p>
+            <p>Documentos familiares se hace para registrar y recordar a una familia de inmigrantes en particular
+            </p>
+            <p>Curso coderhouse de Full Stack iniciado en diciembre de 2024</p>
+            <p>Desarrollo Web - Comisión 63295</p>
+            <p>Maximiliano Cardenas - profe / Julio Avantt - Adjunto</p>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
