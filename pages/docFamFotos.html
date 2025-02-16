@@ -33,14 +33,14 @@
             <div>
                 <ul>
                     <li><a href="../index.html">
-                            <img src="../assets/img/icons_home.png" alt="Documentos familares"></a></li>
+                            <img src="../assets/img/titulos/icons_home.png" alt="Documentos familares"></a></li>
                     <li><a href="./docFamHistorias.html">Historias</a></li>
                     <li><a href="./docFamFotos.html">Fotos</a></li>
                     <li><a href="./docFamDatosUtiles.html">Datos
                             &uacute;tiles</a></li>
                     <li><a href="./docFamContacto.html">Contacto</a></li>
                     <li><a href="./docFamIngreso.html">
-                            <img src="../assets/img/icons_login.png" alt="Ingresar"></a></li>
+                            <img src="../assets/img/titulos/icons_login.png" alt="Ingresar"></a></li>
                 </ul>
             </div>
         </nav <!-- Barra de navegacion -fin -->
@@ -68,7 +68,7 @@
         <section class="contenedor lasFotos"> <!--row-->
 
             <div class="unaFoto">
-                <img src="../assets/img/ArbolPrimavera2024.jpg" class="imgFoto" alt="ArbolPrimavera2024" onclick="abrirImagen(this.src)" >
+                <img src="../assets/img/miniaturas/ArbolPrimavera2024.jpg" class="imgFoto" alt="ArbolPrimavera2024" onclick="abrirImagen(this.src)" >
                 <p>este &aacute;rbol lo plant&oacute; mi abuelo en 1983 </p>
             </div>
 
@@ -78,32 +78,32 @@
             </div>
 
             <div class="unaFoto">
-                <img src="../assets/img/FotosCaratula0.png" class="imgFoto" alt="FotosCaratula0" onclick="abrirImagen(this.src)" >
+                <img src="../assets/img/miniaturas/FotosCaratula0.png" class="imgFoto" alt="FotosCaratula0" onclick="abrirImagen(this.src)" >
                 <p>este &aacute;rbol lo plant&oacute; mi abuelo en 1983 </p>
             </div>
 
             <div class="unaFoto">
-                <img src="../assets/img/FotosCaratula1.png" class="imgFoto" alt="FotosCaratula1" onclick="abrirImagen(this.src)"">
+                <img src="../assets/img/miniaturas/FotosCaratula1.png" class="imgFoto" alt="FotosCaratula1" onclick="abrirImagen(this.src)">
                 <p>este &aacute;rbol lo plant&oacute; mi abuelo en 1983 </p>
             </div>
 
             <div class="unaFoto">
-                <img src="../assets/img/FotosCaratula2.png" class="imgFoto" alt="FotosCaratula2" onclick="abrirImagen(this.src)"">
+                <img src="../assets/img/miniaturas/FotosCaratula2.png" class="imgFoto" alt="FotosCaratula2" onclick="abrirImagen(this.src)">
                 <p>este &aacute;rbol lo plant&oacute; mi abuelo en 1983 </p>
             </div>
 
             <div class="unaFoto">
-                <img src="../assets/img/FotosCaratula3.png" class="imgFoto" alt="FotosCaratula3" onclick="abrirImagen(this.src)"">
+                <img src="../assets/img/miniaturas/FotosCaratula3.png" class="imgFoto" alt="FotosCaratula3" onclick="abrirImagen(this.src)">
                 <p>este &aacute;rbol lo plant&oacute; mi abuelo en 1983 </p>
             </div>
 
             <div class="unaFoto">
-                <img src="../assets/img/TiaConGuitarra.png" class="imgFoto" alt="TiaConGuitarra" onclick="abrirImagen(this.src)"">
+                <img src="../assets/img/miniaturas/TiaConGuitarra.png" class="imgFoto" alt="TiaConGuitarra" onclick="abrirImagen(this.src)">
                 <p>este &aacute;rbol lo plant&oacute; mi abuelo en 1983 </p>
             </div>
 
             <div class="unaFoto">
-                <img src="../assets/img/ViejaFotoRota.png" class="imgFoto" alt="ViejaFotoRota" onclick="abrirImagen(this.src)"">
+                <img src="../assets/img/miniaturas/ViejaFotoRota.png" class="imgFoto" alt="ViejaFotoRota" onclick="abrirImagen(this.src)">
                 <p>este &aacute;rbol lo plant&oacute; mi abuelo en 1983 </p>
             </div>
 
@@ -111,7 +111,8 @@
 
         <script>
             function abrirImagen(src) {
-                window.open(src, 'imgGrande', 'width=600,height=400,toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=yes');
+                const nombreArchivo = src.replace("/miniaturas", "");
+                window.open(nombreArchivo, 'imgGrande', 'width=600, height=400,toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=yes');
             }
         </script>
 
@@ -120,11 +121,11 @@
     <footer class="contenedor">
 
         <div class="footerDivIcono ">
-            <img src="../assets/img/PiePag00.png" alt="Documentos familiares">
+            <img src="../assets/img/titulos/PiePag00.png" alt="Documentos familiares">
         </div>
 
         <div class="footerDivTexto ">
-            <p>Preentrega 03 - Santa Cruz Carlos A ©</p>
+            <p>Entrega Final - Santa Cruz Carlos A ©</p>
             <p>Documentos familiares se hace para registrar y recordar a una familia de inmigrantes en particular
             </p>
             <p>Curso coderhouse de Full Stack iniciado en diciembre de 2024</p>
