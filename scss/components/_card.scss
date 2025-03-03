@@ -1,4 +1,6 @@
-/*  correspondena  _cards.scss  */
+/* éste es el código scss de _cards.scss  
+   lo usamos en docFamFotos.html 
+*/
 
 .cardTemaDePagina {
     /* se usa en la presentacion de la pagina 
@@ -13,7 +15,7 @@
 .cardTemaImg {
     //align-content: space-around;
     //la foto del tema 
-    border-radius: 0.625rem  0.625rem  0.625rem  0.625rem; //10px
+    border-radius: 0.625rem 0.625rem 0.625rem 0.625rem; //10px
     max-width: auto; //ancho de la imagen del tema
     height: 12.5rem; // 200px// 15.625rem; //250px;  alto de la imagen del tema
     text-align: center;
@@ -42,3 +44,5 @@
     color: rgb(128, 129, 129);
 
 }
+
+/* fin del código scss de _cards.scss  */

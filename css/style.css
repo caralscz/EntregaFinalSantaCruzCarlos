@@ -18,7 +18,7 @@
   text-align: center;
 }
 
-/* éste es el código scss de mi reset  */
+/* éste es el código scss de _reset.scss  */
 * {
   margin: 0 auto;
   padding: 0;
@@ -31,7 +31,10 @@ a {
   text-decoration: none;
 }
 
-/*  correspondena  _cards.scss  */
+/* fin del código scss de _reset.scss  */
+/* éste es el código scss de _cards.scss  
+   lo usamos en docFamFotos.html 
+*/
 .cardTemaDePagina {
   /* se usa en la presentacion de la pagina 
      donde indicamos para qué se usa esa página */
@@ -68,6 +71,7 @@ a {
   color: rgb(128, 129, 129);
 }
 
+/* fin del código scss de _cards.scss  */
 /* del scss form */
 .formCom0 {
   display: flex;
@@ -133,10 +137,10 @@ a {
     grid-template-columns: 6fr 6fr;
   }
 }
-@media (min-width: 64rem) {
-  /*1024px*/
+@media (min-width: 62rem) {
+  /*992px*/
   .lasFotos {
-    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-columns: 3fr 3fr 3fr;
   }
 }
 /* esto es _main.index.scss */
@@ -151,7 +155,11 @@ a {
   background-color: rgb(217, 240, 248);
 }
 
-/* corresponden a  _header.scss */
+/* 
+
+    corresponden a  _header.scss 
+
+*/
 /*  
         Para h1 asignamos la fuente cargada desde:  
         https://fonts.google.com/selection/embed 
@@ -183,7 +191,7 @@ Barra de navegación
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  text-align: right;
+  text-align: left;
   font-weight: bolder;
   gap: 0rem;
 }
@@ -212,7 +220,7 @@ body {
 }
 
 .contenedor, .contenedorHeader {
-  max-width: 80%;
+  max-width: 100%;
   background-color: rgb(217, 240, 248);
   margin-top: 0.625rem;
 }
@@ -253,20 +261,25 @@ footer {
   max-width: 70%;
 }
 
-/* Se aplica cuando el ancho de la pantalla es menor o igual a 440px*/
+/* del  _media440.scss  */
+/* Se aplica cuando el ancho de la pantalla es mayor o igual a 440px*/
 /* max-width: Define un límite superior para el ancho de la pantalla.
               el orden para aplicar es 1140;992;768;440
    min-width: Define un límite inferior para el ancho de la pantalla.
-              el orden para aplicar es 440;768;992;1140
+              Es decir que desde ese ancho en adelante se aplicará el estilo.
+              el orden para aplicar es 440;576;768;992
 
 El @media de lasFotos están en _fotos.scss  
 
-***    /media1  ***                */
+***    media 27.5rem = 440px  ***                */
 @media (min-width: 27.5rem) {
-  /* media 440px*/
+  /*
+      media min-width: 27.5rem = 440px, esto se aplica desde los 440px hasta 576px  
+      donde definimos el siguiente @media 
+  */
   .headerNav div ul {
     flex-direction: column;
-    text-align: right;
+    text-align: left;
     margin: 0.01rem;
     gap: 0rem;
   }
@@ -292,12 +305,16 @@ El @media de lasFotos están en _fotos.scss
 /* max-width: Define un límite superior para el ancho de la pantalla.
                 el orden para aplicar es 1140;992;768;440
      min-width: Define un límite inferior para el ancho de la pantalla.
-                el orden para aplicar es 440;768;992;1140
+                el orden para aplicar es 440;576;768;992
 
    El @media de lasFotos están en _fotos.scss  
 
-  ***    /media1  ***                  */
-@media (min-width: 576px) {
+  ***    media 36rem = 576px   ***                  */
+@media (min-width: 36rem) {
+  /* 
+    media min-width:  36rem = 576px esto se aplica desde los 576px hasta 768px 
+    donde definimos el siguiente @media 
+  */
   .headerNav div ul {
     flex-direction: row;
     gap: 1.25rem;
@@ -323,17 +340,23 @@ El @media de lasFotos están en _fotos.scss
   }
 }
 /* del  _media768.scss  */
-/* Se aplica cuando el ancho de la pantalla es menor o igual a 768px
-   max-width: Define un límite superior para el ancho de la pantalla.
+/* Se aplica cuando el ancho de la pantalla es mayor o igual a 768px
+    min-width: Define un límite inferior para el ancho de la pantalla.
+                Es decir que desde ese ancho en adelante se aplicará el estilo.
+                el orden para aplicar es 440;576;768;992
+    Nota:
+    max-width: Define un límite superior para el ancho de la pantalla.
                 el orden para aplicar es 1140;992;768;440
-     min-width: Define un límite inferior para el ancho de la pantalla.
-                el orden para aplicar es 440;768;992;1140
+
 
   El @media de lasFotos están en _fotos.scss  
 
-  ***    /media1  ***                  */
+  ***    media 48rem = 768px ***                  */
 @media (min-width: 48rem) {
-  /* media 768px */
+  /* 
+    media min-width: 48rem = 768px, esto se aplica desde los 768px hasta 992px 
+    donde definimos el siguiente @media 
+  */
   .headerNav div ul {
     flex-direction: row;
     gap: 1.25rem;
@@ -363,14 +386,16 @@ El @media de lasFotos están en _fotos.scss
 /* max-width: Define un límite superior para el ancho de la pantalla.
                 el orden para aplicar es 1140;768;570;440
      min-width: Define un límite inferior para el ancho de la pantalla.
-                el orden para aplicar es 1140;768;570;440
-                  el orden para aplicar es 1140;768;570;440
+     Es decir que desde ese ancho en adelante se aplicará el estilo.
+                el orden para aplicar es 440;576;768;992
 
   El @media de lasFotos están en _fotos.scss  
 
-  ***    /media1  ***                */
+  ***    media 62rem = 992px ***                */
 @media (min-width: 62rem) {
-  /* media 992px */
+  /* 
+    media min-width: 62rem = esto se aplica desde los 992px en adelante 
+  */
   .headerNav div ul {
     flex-direction: row;
     gap: 1.25rem;

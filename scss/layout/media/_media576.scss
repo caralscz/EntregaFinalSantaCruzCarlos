@@ -3,15 +3,17 @@
 /* max-width: Define un límite superior para el ancho de la pantalla.
                 el orden para aplicar es 1140;992;768;440
      min-width: Define un límite inferior para el ancho de la pantalla.
-                el orden para aplicar es 440;768;992;1140
+                el orden para aplicar es 440;576;768;992
 
    El @media de lasFotos están en _fotos.scss  
 
-  ***    /media1  ***                  */
+  ***    media 36rem = 576px   ***                  */
 
-
-// @media (max-width: 576px) {
-@media (min-width: 576px) {
+@media (min-width: 36rem) {
+  /* 
+    media min-width:  36rem = 576px esto se aplica desde los 576px hasta 768px 
+    donde definimos el siguiente @media 
+  */
 
   .headerNav {
 
@@ -20,13 +22,19 @@
       ul {
         flex-direction: row;
         gap: 1.25rem; //20px
+        // background-color: greenyellow; // para ver el espacio que ocupa
+
+        //   flex-direction: column;
+        //   text-align: right;//  left;
+        //   margin: 0.01rem; //0.24px
+        //   gap: 0rem;
       }
     }
   }
 
   .contenedor {
     // definido en _body.scss
-    max-width: 95%;  // dejo menos margen a los costados
+    max-width: 95%; // dejo menos margen a los costados
   }
 
   .cardTemaDePagina {
@@ -41,7 +49,7 @@
   .cardTemaImg {
     // definida en _cards.scss
     //max-width: 30%; //ancho de la imagen del tema
-    max-height: 9.375rem;  //150px;  alto de la imagen del tema
+    max-height: 9.375rem; //150px;  alto de la imagen del tema
     max-width: auto; //ancho de la imagen del tema
   }
 

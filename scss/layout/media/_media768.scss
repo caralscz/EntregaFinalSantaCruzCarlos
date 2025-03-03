@@ -1,25 +1,29 @@
 /* del  _media768.scss  */
-/* Se aplica cuando el ancho de la pantalla es menor o igual a 768px
-   max-width: Define un límite superior para el ancho de la pantalla.
+/* Se aplica cuando el ancho de la pantalla es mayor o igual a 768px
+    min-width: Define un límite inferior para el ancho de la pantalla.
+                Es decir que desde ese ancho en adelante se aplicará el estilo.
+                el orden para aplicar es 440;576;768;992
+    Nota:
+    max-width: Define un límite superior para el ancho de la pantalla.
                 el orden para aplicar es 1140;992;768;440
-     min-width: Define un límite inferior para el ancho de la pantalla.
-                el orden para aplicar es 440;768;992;1140
+
 
   El @media de lasFotos están en _fotos.scss  
 
-  ***    /media1  ***                  */
+  ***    media 48rem = 768px ***                  */
 
-// @media (max-width: 768px) {
-@media (min-width: 48rem) {
-
-  /* media 768px */
-
+@media (min-width:  48rem) {
+  /* 
+    media min-width: 48rem = 768px, esto se aplica desde los 768px hasta 992px 
+    donde definimos el siguiente @media 
+  */
   .headerNav {
 
     div {
       ul {
         flex-direction: row;
         gap: 1.25rem; //20px
+        //   background-color: yellow;  //para ver el espacio que ocupa
       }
     }
   }

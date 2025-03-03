@@ -3,18 +3,17 @@
 /* max-width: Define un límite superior para el ancho de la pantalla.
                 el orden para aplicar es 1140;768;570;440
      min-width: Define un límite inferior para el ancho de la pantalla.
-                el orden para aplicar es 1140;768;570;440
-                  el orden para aplicar es 1140;768;570;440
+     Es decir que desde ese ancho en adelante se aplicará el estilo.
+                el orden para aplicar es 440;576;768;992
 
   El @media de lasFotos están en _fotos.scss  
 
-  ***    /media1  ***                */
+  ***    media 62rem = 992px ***                */
 
-// @media (max-width: 62rem) {
 @media (min-width: 62rem) {
-  //992px
-
-  /* media 992px */
+  /* 
+    media min-width: 62rem = esto se aplica desde los 992px en adelante 
+  */
 
   .headerNav {
 
@@ -22,6 +21,8 @@
       ul {
         flex-direction: row;
         gap: 1.25rem; //20px
+        // background-color: rgb(221, 74, 160); // para ver el espacio que ocupa
+
       }
     }
   }
@@ -39,7 +40,7 @@
 
   .cardTemaImg {
     // definida en _cards.scss
-    //la foto del tema 
+    // la foto del tema 
     border-radius: 0.625rem 0.625rem 0.625rem 0.625rem; //10px
     max-width: auto; //ancho de la imagen del tema
     height: 12.5rem; // 200px// 15.625rem; //250px;  alto de la imagen del tema
